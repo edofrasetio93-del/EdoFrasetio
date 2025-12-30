@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pemesanan Menu Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>☕ Cafe Edo Frasetio Menu ☕</h1>
+    </header>
+
+    <div class="menu-grid">
+        <div class="menu-card">
+            <h3>Kopi Hitam</h3>
+            <p>Rp 10.000</p>
+            <button class="btn-add" onclick="tambahItem('Kopi Hitam', 10000)">Tambah</button>
+        </div>
+        <div class="menu-card">
+            <h3>Cafe Latte</h3>
+            <p>Rp 18.000</p>
+            <button class="btn-add" onclick="tambahItem('Cafe Latte', 18000)">Tambah</button>
+        </div>
+        <div class="menu-card">
+            <h3>Teh Tarik</h3>
+            <p>Rp 12.000</p>
+            <button class="btn-add" onclick="tambahItem('Teh Tarik', 12000)">Tambah</button>
+        </div>
+        <div class="menu-card">
+            <h3>Roti Bakar</h3>
+            <p>Rp 15.000</p>
+            <button class="btn-add" onclick="tambahItem('Roti Bakar', 15000)">Tambah</button>
+        </div>
+        <div class="menu-card">
+            <h3>Kentang Goreng</h3>
+            <p>Rp 14.000</p>
+            <button class="btn-add" onclick="tambahItem('Kentang Goreng', 14000)">Tambah</button>
+        </div>
+        <div class="menu-card">
+            <h3>Bakso Goreng</h3>
+            <p>Rp 15.000</p>
+            <button class="btn-add" onclick="tambahItem('Bakso Goreng', 15000)">Tambah</button>
+        </div>
+    </div>
+
+    <div class="cart-section">
+        <h3>Daftar Pesanan</h3>
+        <div id="cart-list">
+            <p style="color: #888; text-align: center;">Belum ada pesanan</p>
+        </div>
+        
+        <div class="total-area">
+            <div style="display: flex; justify-content: space-between; font-weight: bold;">
+                <span>Total Bayar:</span>
+                <span id="total-harga">Rp 0</span>
+            </div>
+            <button class="btn-checkout" onclick="checkout()">Pesan Sekarang</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
